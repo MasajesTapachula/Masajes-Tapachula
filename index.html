@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masajes a Domicilio en Tapachula | Relax y Bienestar</title>
+    <style>
+        /* --- ESTILOS GENERALES Y PALETA DE COLORES --- */
+        :root {
+            --primary-color: #2c5e53; /* Verde spa profundo */
+            --accent-color: #d4a373;  /* Tono cálido/madera */
+            --bg-color: #fdfbf7;      /* Blanco suave de fondo */
+            --text-color: #333333;
+            --card-bg: #ffffff;
+            --wa-green: #25d366;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 80px; /* Espacio para que el botón flotante no tape contenido al final */
+        }
+
+        /* --- ENCABEZADO --- */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* --- CONTENEDOR PRINCIPAL --- */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .intro h2 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* --- SECCIÓN DE SERVICIOS (GRID RESPONSIVE) --- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #e0e0e0; /* Color mientras carga la imagen */
+        }
+
+        .service-content {
+            padding: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .service-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-desc {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .btn-card {
+            display: inline-block;
+            text-align: center;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .btn-card:hover {
+            background-color: #b88655;
+        }
+
+        /* --- BOTÓN FLOTANTE DE WHATSAPP --- */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 25px;
+            right: 25px;
+            background-color: var(--wa-green);
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* --- PIE DE PÁGINA --- */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #eae6df;
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Masajes A Domicilio en Tapachula</h1>
+        <p>Relajación, salud y bienestar directo a la comodidad de tu hogar</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Nuestros Servicios de Masoterapia</h2>
+            <p>Elige la variante de masaje que mejor se adapte a tus necesidades de descanso o alivio muscular.</p>
+        </section>
+
+        <main class="services-grid">
+            
+            <!-- TARJETA 1 -->
+            <article class="service-card">
+                <!-- Reemplaza "imagen1.jpg" por el nombre de tu archivo de imagen -->
+                <img src="imagen1.jpg" alt="Masaje Relajante Tradicional en Tapachula" class="service-img">
+                <div class="service-content">
+                    <h3 class="service-title">Masaje Relajante Tradicional</h3>
+                    <p class="service-desc">Técnica suave y fluida diseñada para reducir los niveles de estrés, mejorar la circulación y brindar una sensación total de descanso y paz mental.</p>
+                    <!-- Cambia EL NUMERO de WhatsApp (incluyendo 52 para México) -->
+                    <a href="https://wa.me/529621354299?text=Hola,%20me%20interesa%20información%20del%20Masaje%20Relajante" class="btn-card" target="_blank">Agendar por WhatsApp</a>
+                </div>
+            </article>
+
+            <!-- TARJETA 2 -->
+            <article class="service-card">
+                <!-- Reemplaza "imagen2.jpg" por el nombre de tu archivo de imagen -->
+                <img src="imagen2.jpg" alt="Masaje Descontracturante Localizado" class="service-img">
+                <div class="service-content">
+                    <h3 class="service-title">Masaje Descontracturante</h3>
+                    <p class="service-desc">Enfocado en aliviar nudos y tensiones musculares acumuladas en espalda, cuello y hombros. Ideal para fatiga laboral o posturas prolongadas.</p>
+                    <a href="https://wa.me/529621354299?text=Hola,%20me%20interesa%20información%20del%20Masaje%20Descontracturante" class="btn-card" target="_blank">Agendar por WhatsApp</a>
+                </div>
+            </article>
+
+            <!-- TARJETA 3 -->
+            <article class="service-card">
+                <!-- Reemplaza "imagen3.jpg" por el nombre de tu archivo de imagen -->
+                <img src="imagen3.jpg" alt="Masaje Mixto con Aromaterapia" class="service-img">
+                <div class="service-content">
+                    <h3 class="service-title">Masaje Mixto con Aromaterapia</h3>
+                    <p class="service-desc">La combinación perfecta entre liberación de tensión muscular y relajación profunda acompañada de aceites esenciales para revitalizar el cuerpo.</p>
+                    <a href="https://wa.me/529621354299?text=Hola,%20me%20interesa%20información%20del%20Masaje%20Mixto" class="btn-card" target="_blank">Agendar por WhatsApp</a>
+                </div>
+            </article>
+
+        </main>
+    </div>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP (Sigue al usuario al hacer scroll) -->
+    <!-- Cambia el 529620000000 por tu número real -->
+    <a href="https://wa.me/529621354299?text=Hola,%20quisiera%20pedir%20informes%20sobre%20los%20masajes%20a%20domicilio" class="whatsapp-float" target="_blank" aria-label="Contacto por WhatsApp">
+        <!-- Ícono SVG de WhatsApp integrado (no requiere cargar librerías externas) -->
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="fill:white; stroke:none;">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.67-1.622-.918-2.217-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.461c-1.808 0-3.526-.487-5.016-1.336l-.359-.205-3.731.978.995-3.637-.229-.364c-.927-1.474-1.417-3.187-1.417-4.945 0-5.183 4.217-9.4 9.4-9.4 2.51 0 4.87.978 6.643 2.75 1.773 1.773 2.75 4.133 2.75 6.643 0 5.184-4.218 9.401-9.401 9.401m0-20.8c-6.29 0-11.4 5.11-11.4 11.4 0 2.015.525 3.98 1.523 5.71l-1.622 5.922 6.06-1.589c1.674.914 3.568 1.397 5.439 1.397 6.29 0 11.4-5.11 11.4-11.4 0-3.045-1.187-5.907-3.34-8.06-2.153-2.153-5.015-3.34-8.06-3.34z"/>
+        </svg>
+    </a>
+
+    <footer>
+        <p>&copy; Servicios Profesionales de Masoterapia a Domicilio - Tapachula, Chiapas.</p>
+    </footer>
+
+</body>
+</html>
