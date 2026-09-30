@@ -30,7 +30,13 @@
             background: var(--card-bg); border-radius: 18px; overflow: hidden;
             box-shadow: 0 6px 18px rgba(0,0,0,0.12); display: flex; flex-direction: column;
         }
-        .service-img { width: 100%; height: 380px; object-fit: cover; }
+        .service-img { 
+            width: 100%; 
+            height: 350px;
+            object-fit: contain; 
+            background: #fdf2f6;
+            padding: 5px;
+        }
         .service-content { padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; }
         .service-title { color: var(--primary-color); font-size: 1.35rem; font-weight: bold; margin-bottom: 0.6rem; }
         .service-desc { font-size: 1rem; color: #555; margin-bottom: 1.2rem; flex-grow: 1; }
